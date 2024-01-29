@@ -15,7 +15,8 @@ const App = () => {
       <NavComponents />
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
-        <Route path="/detail/:id" element={<DetailBookPage />} />
+        {/* <Route path="/detail/:id" element={<DetailBookPage />} /> */}
+        <Route path="/detail/:slug" element={<DetailBookPage />} />
         <Route path="*" element={<Notfound />}></Route>
       </Routes>
     </div>
